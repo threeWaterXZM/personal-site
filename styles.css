@@ -272,53 +272,45 @@ main,
   color: var(--ink-soft);
 }
 
-.timeline-item {
-  display: grid;
-  grid-template-columns: 12rem 1fr;
-  gap: 1.5rem 2rem;
-  margin-top: 2.75rem;
-  padding-top: 2rem;
-  border-top: 1px solid var(--line);
+.work-list {
+  list-style: none;
+  margin: 2rem 0 0;
+  padding: 0;
+  max-width: 40rem;
 }
 
-.timeline-item:first-of-type {
-  border-top: none;
+.work-list li {
+  padding: 1.35rem 0;
+  border-bottom: 1px solid var(--line);
+}
+
+.work-list li:first-child {
   padding-top: 0;
 }
 
-.timeline-aside time {
-  display: block;
-  font-size: 0.9rem;
-  color: var(--muted);
-}
-
-.role {
-  margin: 0.35rem 0 0;
-  color: var(--accent);
-  font-weight: 600;
-  font-size: 0.92rem;
-}
-
-.timeline-body h3 {
-  margin: 0 0 0.85rem;
+.work-list h3 {
+  margin: 0;
   font-family: var(--font-display);
   font-size: 1.35rem;
 }
 
-.timeline-body ul {
-  margin: 0;
-  padding-left: 1.15rem;
-  color: var(--ink-soft);
+.work-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.65rem 1.25rem;
+  margin: 0.45rem 0 0;
 }
 
-.timeline-body li + li {
-  margin-top: 0.45rem;
-}
-
-.tags {
-  margin: 1rem 0 0;
+.work-meta time {
   color: var(--muted);
-  font-size: 0.88rem;
+  font-size: 0.92rem;
+}
+
+.work-meta .role {
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 0.95rem;
 }
 
 .edu-list {
@@ -433,7 +425,6 @@ main,
     font-size: 0.88rem;
   }
 
-  .timeline-item,
   .skill-list > div {
     grid-template-columns: 1fr;
     gap: 0.5rem;

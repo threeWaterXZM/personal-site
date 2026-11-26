@@ -6,7 +6,7 @@
 
 | 渠道 | 用途 | 状态 |
 |------|------|------|
-| 本站 + xuzhaomiao.xyz | 主页 / 简历入口 | 绑定 GitHub Pages |
+| 本站 + xuzhaomiao.com | 主页 / 简历入口 | 绑定 GitHub Pages |
 | GitHub | 代码、项目叙事 | [threeWaterXZM](https://github.com/threeWaterXZM) |
 | X | 短观点、行业观察 | [x.com/threewaterxzm](https://x.com/threewaterxzm) |
 | LinkedIn | 职业网络与背书 | [照淼·徐](https://www.linkedin.com/in/%E7%85%A7%E6%B7%BC-%E5%BE%90-9771b5264/) |

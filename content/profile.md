@@ -6,7 +6,7 @@
 - GitHub：[github.com/threeWaterXZM](https://github.com/threeWaterXZM)
 - X：[x.com/threewaterxzm](https://x.com/threewaterxzm)
 - LinkedIn：[照淼·徐](https://www.linkedin.com/in/%E7%85%A7%E6%B7%BC-%E5%BE%90-9771b5264/)
-- 站点：https://xuzhaomiao.xyz
+- 站点：https://xuzhaomiao.com
 - 更新：2026-11
 
 ## 一句话

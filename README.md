@@ -1,6 +1,6 @@
 # 徐照淼 · Personal Site
 
-个人职业展示站 · [xuzhaomiao.xyz](https://xuzhaomiao.xyz)
+个人职业展示站 · [xuzhaomiao.com](https://xuzhaomiao.com)
 
 ## 本地预览
 
@@ -16,14 +16,14 @@ python3 -m http.server 8080
 ```
 index.html          # 个人展示页
 styles.css          # 样式
-CNAME               # 自定义域名 xuzhaomiao.xyz
+CNAME               # 自定义域名 xuzhaomiao.com
 content/            # 可版本控制的经历原文
 docs/               # 域名与个人 IP 运营说明
 ```
 
 ## 发布
 
-GitHub Pages：仓库 Settings → Pages → Deploy from branch `main` / `/ (root)`，Custom domain 填 `xuzhaomiao.xyz` 并勾选 Enforce HTTPS。
+GitHub Pages：仓库 Settings → Pages → Deploy from branch `main` / `/ (root)`，Custom domain 填 `xuzhaomiao.com` 并勾选 Enforce HTTPS。
 
 DNS（指向 GitHub Pages）：
 
