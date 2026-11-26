@@ -1,24 +1,23 @@
-# Amber Group · Group Institute
+# Amber Group
 
 - 时间：2022.07 — 至今
-- 职位：Tech Lead / Line Manager
+- 职位：项目负责人（虚线管理）
 
-## Crypto 交易管理系统
-- 负责核心交易管理系统建设，支持 Amberfin、Whalefin 等业务
-- 架构设计与核心模块重构，稳定性提升至 99.9%
-- 需求拆解、技术方案与团队推进
+## Crypto 交易审批与业务中台（AUM $5B+）
+- 支撑 Amberfin / Whalefin 的 OTC、转账、借贷、Earn、授信等 15 类业务多级审批
+- 架构重构：审批从业务剥离为独立服务；57 种审批流，经 Kafka 对接约 10 个外部系统
+- 运营平台 am-ops：EOD 日报、分布式锁、失败重试与人工二次确认
+- AI 赋能：聊天记录转审批单、截图对账（工时 -70%）、银行流水识别
 - 技术栈：FastAPI、Kafka、MongoDB、PostgreSQL
 
-## 企业 AI 知识库
-- 基于 Onyx 构建企业级知识库
-- 打通 Confluence、Jira、Google Drive、Web 等数据源
-- 向量检索与 AI 问答
-- 方向：RAG、LLM、Embedding、AI Search
+## Ambre 个人金融 AI 助手（信号方向）
+- 三路摄入 → 过滤去噪 → LLM 标注 → 按重要度 × 持仓敞口投影推送
+- Kafka 解耦；LLM 四级降级 + 数字白名单
 
-## AI Workflow 自动化
-- 基于 Dify / n8n 落地对账、提单、智能客服等流程
-- 推动 AI Agent 与内部系统集成
+## 企业 AI 知识库（Onyx 二开）
+- Vespa 混合检索与带引用回答
+- 企业权限层、元数据 API；多服务容器化部署
 
-## Quant Trading
-- 新闻交易、CEX / DEX 套利等量化系统
-- 行情获取、交易执行、风控、监控与告警
+## 量化项目
+- QMT A 股策略：回测与实盘共用代码
+- 跨所价差监控、预测市场套利

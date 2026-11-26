@@ -417,6 +417,16 @@ main,
   margin-top: 0.35rem !important;
 }
 
+.footer a {
+  color: var(--ink-soft);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.footer a:hover {
+  color: var(--accent);
+}
+
 @media (max-width: 760px) {
   .nav-links {
     gap: 0.85rem;

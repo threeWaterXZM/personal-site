@@ -1,31 +1,36 @@
-# 域名选购计划
+# 域名：xuzhaomiao.xyz
 
-我无法替你完成付款，但已核实以下域名**当前可注册**（以注册商结账页为准）：
+已购买。本仓库根目录 `CNAME` 文件内容为：
 
-| 域名 | 首年参考价 | 续费参考 | 推荐理由 |
-|------|-----------|---------|---------|
-| **xuzhaomiao.xyz** | ~$1.3（Porkbun） | ~$14 | 最便宜，完整姓名拼音 |
-| **xuzhaomiao.me** | ~$2（Namecheap 促销） | ~$19 | 个人站常见后缀 |
-| **xuzhaomiao.com** | ~$10–12 | ~$12 | 最正式，长期品牌最稳 |
-| xzmao.xyz | ~$1.3 | ~$14 | 短，但辨识度略低 |
-| zhaomiao.xyz | ~$1.3 | ~$14 | 短名备选 |
+```
+xuzhaomiao.xyz
+```
 
-## 建议
+## DNS 配置（GitHub Pages）
 
-1. **预算优先**：买 `xuzhaomiao.xyz`（Porkbun）
-2. **长期品牌**：直接买 `xuzhaomiao.com`（Porkbun / Cloudflare Registrar）
-3. 注册后开启 **WHOIS Privacy**，Nameserver 先指向 GitHub Pages 或 Cloudflare
+在域名注册商（如 Porkbun / Cloudflare / Namecheap）添加：
 
-## 购买步骤（Porkbun 示例）
+| 类型 | 主机 / Name | 值 / Answer |
+|------|-------------|-------------|
+| A | `@` / 留空 | `185.199.108.153` |
+| A | `@` | `185.199.109.153` |
+| A | `@` | `185.199.110.153` |
+| A | `@` | `185.199.111.153` |
+| CNAME | `www` | `threeWaterXZM.github.io` |
 
-1. 打开 https://porkbun.com
-2. 搜索 `xuzhaomiao.xyz` 或 `xuzhaomiao.com`
-3. 加入购物车 → 结账（支持信用卡）
-4. DNS 添加：
-   - `A` → `185.199.108.153` / `.109.153` / `.110.153` / `.111.153`（GitHub Pages）
-   - 或 `CNAME` `www` → `threeWaterXZM.github.io`
-5. 本仓库根目录放置 `CNAME` 文件，内容为你的域名
+可选：若使用 Cloudflare，可将 Nameserver 切到 Cloudflare，再按上表配 DNS，并开启代理或仅 DNS。
 
-## 绑定 GitHub Pages 后
+## GitHub Pages
 
-在仓库 Settings → Pages → Custom domain 填入域名，并勾选 Enforce HTTPS。
+1. 仓库推送到 `https://github.com/threeWaterXZM/personal-site`（或 `threeWaterXZM.github.io`）
+2. Settings → Pages → Source：`Deploy from a branch` → `main` → `/ (root)`
+3. Custom domain：`xuzhaomiao.xyz` → Save
+4. 勾选 **Enforce HTTPS**（DNS 生效后可用）
+
+## 校验
+
+```bash
+dig +short xuzhaomiao.xyz A
+dig +short www.xuzhaomiao.xyz CNAME
+curl -I https://xuzhaomiao.xyz
+```
